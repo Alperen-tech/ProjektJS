@@ -1,41 +1,97 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-}
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
 
-.question {
-    margin-bottom: 20px;
-}
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
 
-.result {
-    margin-top: 20px;
-    font-size: 1.5em;
-    padding: 10px;
-    text-align: center;
-}
+        h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
 
-.result.fail {
-    color: red;
-}
+        .quiz-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+        }
 
-.result.pass {
-    color: orange;
-}
+        .question {
+            margin-bottom: 20px;
+            text-align: left;
+        }
 
-.result.excellent {
-    color: green;
-}
+        .result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
 
-button {
-    padding: 10px 20px;
-    font-size: 1em;
-}
+        .result.fail {
+            color: red;
+        }
+
+        .result.pass {
+            color: orange;
+        }
+
+        .result.excellent {
+            color: green;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+  

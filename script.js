@@ -11,13 +11,13 @@ const questions = [
     { question: "CSS används för att lägga till innehåll i en webbsida?", answer: false }
 ];
 
-// Hämta referenser till HTML-element
+// Hämtat referenser till HTML-element
 const quizContainer = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');
 const resultContainer = document.getElementById('result');
 const toggleModeButton = document.getElementById('toggle-mode');
 
-// Visa frågorna i quizet
+// Visar frågorna i quizet
 questions.forEach((q, index) => {
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
@@ -33,7 +33,7 @@ questions.forEach((q, index) => {
     quizContainer.appendChild(questionDiv);
 });
 
-// Hantera quiz-resultat
+// Hanterar quiz-resultat
 submitButton.addEventListener('click', () => {
     let score = 0;
 
