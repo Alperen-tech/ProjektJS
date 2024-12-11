@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.result.fail {
+    color: red;
+}
+
+.result.pass {
+    color: orange;
+}
+
+.result.excellent {
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+}
